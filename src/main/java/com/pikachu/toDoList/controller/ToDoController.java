@@ -17,7 +17,7 @@ public class ToDoController {
     @GetMapping("/")
     public String showToDoList(Model model) {
         model.addAttribute("todos", toDoService.getAllTasks());
-        return "todolist";
+        return "toDoList";
     }
 
     @PostMapping("/todos")
